@@ -76,16 +76,7 @@ git clone git@github.com:manolito-fatec/repo-gamer-2024-1.git
 git clone git@github.com:manolito-fatec/repo-notgamer-front-2024-1.git
 ```
 
-### 2. Backend (Spring Boot)
-
-Entre no diretório do backend e instale as dependências Maven:
-
-```bash
-cd repo-gamer-2024-1/
-./mvnw clean install
-```
-
-### 3. Frontend (Vue.js)
+### 2. Frontend (Vue.js)
 
 Entre no diretório do frontend e instale as dependências do projeto com npm ou yarn:
 
@@ -96,7 +87,7 @@ npm install
 yarn install
 ```
 
-### 4. Docker Compose
+### 3. Docker Compose
 
 Se o projeto inclui serviços adicionais como banco de dados, cache (Redis), etc., eles podem ser configurados e
 iniciados com Docker Compose. Certifique-se de ter o Docker e o Docker Compose instalados em sua máquina.
@@ -107,7 +98,7 @@ Para iniciar os containers, execute o seguinte comando no diretório raiz do pro
 docker-compose up -d
 ```
 
-### 5. Rodando a Aplicação
+### 4. Rodando a Aplicação
 
 Backend
 Inicie o servidor Spring Boot utilizando o Maven:
@@ -308,10 +299,6 @@ person: Representa uma pessoa. Os atributos associados são:
 Rel: Esta é a relação entre as entidades "person" e "device_tracker". A cardinalidade (1,1) do lado de "person" indica
 que cada pessoa deve estar associada a exatamente um dispositivo. A cardinalidade (0,n) do lado de "device_tracker"
 significa que um dispositivo pode estar associado a nenhuma ou a várias pessoas.
-
-## 11. Boas Práticas e Padrões
-
-Padrões de código (SOLID).
 
 ## 12. Políticas de Versionamento
 
