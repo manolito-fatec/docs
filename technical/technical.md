@@ -51,14 +51,13 @@ APIs RESTful e WebSocket. A segurança dos dados será garantida com criptografi
     - **proj4**: Biblioteca para transformações de projeções cartográficas.
 - **PrimeVue 4.0.5**: Biblioteca de componentes UI para Vue.js, usada para criar interfaces dinâmicas e interativas.
 - **Vue3-OpenLayers 11.2.0**: Wrapper Vue.js para integração com OpenLayers.
-
-#### Dependências de Desenvolvimento
-
-- **Vite**: Utilizado para rodar e construir o projeto Vue.js.
-- **Vue TSC**: Ferramenta de verificação de tipos TypeScript para projetos Vue.js.
-- **npm-run-all**: Utilizado para rodar múltiplos scripts npm em paralelo.
-- **@vitejs/plugin-vue**: Plugin do Vite para trabalhar com Vue.js.
-- **@types/node** e **@tsconfig/node20**: Tipos e configuração de TypeScript para Node.js.
+- **@types/proj4 2.5.5**: Tipagens TypeScript para a biblioteca proj4.
+- **@tsconfig/node20 20.1.4**: Arquivo de configuração TypeScript para Node.js, versão 20.
+- **@types/node 20.14.5**: Tipagens TypeScript para Node.js, versão 20.
+- **@vitejs/plugin-vue 5.0.5**: Plugin para integrar Vue.js com o Vite.
+- **@vue/tsconfig 0.5.1**: Configuração de TypeScript específica para projetos Vue.js.
+- **npm-run-all2 6.2.0**: Ferramenta para executar múltiplos scripts npm em paralelo ou sequência.
+- **vue-tsc 2.0.21**: Ferramenta para checagem de tipos em projetos Vue.js usando TypeScript.
 
 ## Setup de Desenvolvimento
 
@@ -120,19 +119,18 @@ yarn dev
 
 ## 3. Tecnologias e Ferramentas Utilizadas
 
-|                                                         | Tecnologia   | Versão | Descrição                                            |
-|---------------------------------------------------------|--------------|--------|------------------------------------------------------|
-| ![My Skills](https://skillicons.dev/icons?i=java)       | Java         | 17     | Linguagem de programação utilizada                   |
-| ![My Skills](https://skillicons.dev/icons?i=spring)     | Spring Boot  | 3.3.2  | Framework para criação de aplicações Java            |
-| ![My Skills](https://skillicons.dev/icons?i=mysql)      | Oracle Cloud | X.X.X  | Banco de dados relacional                            |
-| ![My Skills](https://skillicons.dev/icons?i=swagger)    | Swagger      | X.X.X  | Documentação de API                                  |
-| ![My Skills](https://skillicons.dev/icons?i=docker)     | Docker       | X.X.X  | Plataforma para containerização de aplicações        |
-| ![My Skills](https://skillicons.dev/icons?i=vue)        | Vue.js       | 3.4.29 | Framework JavaScript para interfaces de usuário      |
-| ![My Skills](https://skillicons.dev/icons?i=vite)       | Vite         | 5.3.1  | Ferramenta de build e desenvolvimento para Vue       |
-| ![My Skills](https://skillicons.dev/icons?i=redis)      | Redis        | X.X.X  | Banco de dados em memória para cache                 |
-| ![My Skills](https://skillicons.dev/icons?i=git)        | Git          | X.X.X  | Sistema de controle de versão                        |
-| ![My Skills](https://skillicons.dev/icons?i=typescript) | TypeScript   | ~5.4.0 | Superset do JavaScript com tipagem estática          |
-| ![My Skills](https://skillicons.dev/icons?i=lombok)     | Lombok       | X.X.X  | Biblioteca para reduzir a verbosidade do código Java |
+|                                                         | Tecnologia   | Versão  | Descrição                                            |
+|---------------------------------------------------------|--------------|---------|------------------------------------------------------|
+| ![My Skills](https://skillicons.dev/icons?i=java)       | Java         | 17      | Linguagem de programação utilizada                   |
+| ![My Skills](https://skillicons.dev/icons?i=spring)     | Spring Boot  | 3.3.2   | Framework para criação de aplicações Java            |
+| ![My Skills](https://skillicons.dev/icons?i=mysql)      | Oracle Cloud | X.X.X   | Banco de dados relacional                            |
+| ![My Skills](../assets/Swagger.svg)                     | Swagger      | 2.6.0   | Documentação de API                                  |
+| ![My Skills](https://skillicons.dev/icons?i=docker)     | Docker       | ~27.2.1 | Plataforma para containerização de aplicações        |
+| ![My Skills](https://skillicons.dev/icons?i=vue)        | Vue.js       | 3.4.29  | Framework JavaScript para interfaces de usuário      |
+| ![My Skills](https://skillicons.dev/icons?i=vite)       | Vite         | 5.3.1   | Ferramenta de build e desenvolvimento para Vue       |
+| ![My Skills](https://skillicons.dev/icons?i=redis)      | Redis        | 3.X.X   | Banco de dados em memória para cache                 |
+| ![My Skills](https://skillicons.dev/icons?i=git)        | Git          | ~2.43.0 | Sistema de controle de versão                        |
+| ![My Skills](https://skillicons.dev/icons?i=typescript) | TypeScript   | ~5.4.0  | Superset do JavaScript com tipagem estática          |
 
 ## 4. Endpoints API (Swagger)
 
@@ -142,7 +140,7 @@ Você pode acessar a documentação visual da API através do Swagger UI em:
 
 [Swagger-UI](http://localhost:8080/swagger-ui.html)
 
-## 6. Estrutura de Pastas e Organização
+## 5. Estrutura de Pastas e Organização
 
 Explicação sobre a organização do código:
 
@@ -275,7 +273,7 @@ Explicação sobre a organização do código:
           ##### `/person`
             - **Descrição**: Testes específicos relacionados à lógica de pessoas.
 
-## 7. Modelagem de Banco de Dados
+## 6. Modelagem de Banco de Dados
 
 Diagrama Entidade-Relacionamento (ER)
 
@@ -300,7 +298,7 @@ Rel: Esta é a relação entre as entidades "person" e "device_tracker". A cardi
 que cada pessoa deve estar associada a exatamente um dispositivo. A cardinalidade (0,n) do lado de "device_tracker"
 significa que um dispositivo pode estar associado a nenhuma ou a várias pessoas.
 
-## 12. Políticas de Versionamento
+## 7. Políticas de Versionamento
 
 Fluxo de trabalho com branches e commits:
 
